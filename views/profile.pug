@@ -1,0 +1,37 @@
+//- Extend the base layout
+extends layout
+
+//- Insert custom CSS for the profile page
+block styles
+  link(rel="stylesheet" href="../public/assets/css/profile.css")
+
+//- Content specific to the profile page
+block content
+  .profile-card
+    img.profile-picture#profilePic(src="path-to-default-profile-picture.jpg" alt="Profile Picture")
+    h2#usernameDisplay John Doe
+    p.profile-info
+      span Email:
+      span#emailDisplay john@example.com
+    p.profile-info
+      span Account Type:
+      | Premium User
+
+    button.edit-profile-btn#editProfileButton Edit Profile
+    button.logout-btn#logoutButton Logout
+
+    form.edit-form#editProfileForm
+      label(for="newUsername") Update Username
+      input(type="text" id="newUsername" placeholder="Enter new username")
+
+      label(for="newEmail") Update Email
+      input(type="email" id="newEmail" placeholder="Enter new email")
+
+      label(for="newProfilePic") Update Profile Picture
+      input(type="file" id="newProfilePic" accept="image/*")
+
+      button.submit-btn(type="submit") Save Changes
+
+//- Insert custom scripts for the profile page
+block scripts
+  script(src="../public/assets/js/profile.js")

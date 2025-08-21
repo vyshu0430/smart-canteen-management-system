@@ -1,0 +1,41 @@
+// order.pug
+extends layout
+
+block content
+link(rel="stylesheet", href="/assests/css/order.css")
+  h1 Order Now
+  #order-container
+    h2 Select Your Items
+    form#order-form
+      .form-group
+        label(for="item") Choose Category:
+        select#item(name="item" required)
+          option(value="" disabled selected) Select a category
+          option(value="breakfast") Breakfast
+          option(value="lunch") Lunch
+          option(value="snacks") Snacks
+          option(value="drinks") Drinks
+
+      .form-group
+        label(for="menuItems") Available Items:
+        select#menuItems(name="menuItems" required)
+          option(value="" disabled selected) Select an item
+
+      .form-group
+        label(for="quantity") Quantity:
+        input#quantity(type="number" name="quantity" min="1" required)
+
+      .form-group
+        label(for="name") Your Name:
+        input#name(type="text" name="name" required)
+
+      .form-group
+        label(for="email") Your Email:
+        input#email(type="email" name="email" required)
+
+      .form-group
+        label(for="phone") Your Phone:
+        input#phone(type="tel" name="phone" required)
+
+      .form-group
+        button.submit-btn(type="submit") Place Order

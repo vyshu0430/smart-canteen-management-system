@@ -1,0 +1,19 @@
+// contact.pug
+extends layout
+
+block content
+link(rel="stylesheet", href="/assests/css/contact.css")
+  h2 Contact Us
+  p Feel free to reach out to us with any questions, feedback, or concerns.
+
+  form(action="/contact" method="POST")
+    label(for="name") Name:
+    input(type="text" name="name" id="name" required)
+    
+    label(for="email") Email:
+    input(type="email" name="email" id="email" required)
+    
+    label(for="message") Message:
+    textarea(name="message" id="message" required)
+    
+    button(type="submit") Submit

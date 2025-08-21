@@ -1,0 +1,147 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Header */
+header {
+    background-color: #9b7ebd;
+    padding: 50px 20px; /* Increased padding for better appearance */
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center vertically */
+}
+
+
+.logo {
+    font-size: 3.0em; /* Larger logo text */
+    font-weight: bold; /* Bold text */
+}
+
+.nav-links {
+    display: flex; /* Flex layout for navigation */
+    gap: 30px; /* Space between links */
+}
+
+.nav-links a {
+    color: white; /* Link color */
+    font-size: 30px; /* Link font size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Color change on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content */
+h1 {
+    text-align: center; /* Center the title */
+    margin: 20px 0; /* Margin around the title */
+}
+
+#menu-container {
+    max-width: 900px; /* Max width for the menu */
+    margin: 20px auto; /* Center the menu container */
+    padding: 20px; /* Padding inside the menu container */
+    background: white; /* White background for the menu container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 50px solid #ddd;
+
+    
+}
+
+h2 {
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center the subheading */
+}
+
+/* Button styles */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 5px; /* Margin between buttons */
+    transition: background-color 0.3s; /* Smooth background transition */
+    
+}
+
+button:hover {
+    background-color:red; /* Darker green on hover */
+}
+
+/* Menu Items */
+.menu {
+    display: flex; /* Flex layout for menu items */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between items */
+    margin-top: 10px; /* Space above menu items */
+    
+}
+
+/* Footer */
+footer {
+    background-color:orange; /* Dark footer */
+    color: white; /* White text color */
+    padding: 10px; /* Padding for footer */
+    text-align: center; /* Center the footer text */
+    position: relative; /* Position footer relative */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+}
+
+
+/* General styling for the menu container */
+#menu {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    gap: 15px; /* Space between each item */
+    padding: 10px;
+    border: 50px solid #ddd;
+}
+
+/* Styling for individual menu items */
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    padding: 8px;
+    border: 50px solid #ddd; /* Light border for separation */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for menu images with consistent size */
+.menu-image {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: cover; /* Ensures the image scales to fit */
+    border-radius: 8px;
+}
+
+/* Styling for menu text */
+.menu-item span {
+    font-size: 16px;
+    color:red;
+}

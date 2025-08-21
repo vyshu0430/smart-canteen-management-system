@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+/* Header */
+header {
+    background-color: #9b7ebd;
+    padding: 50px 20px; /* Increased padding for better appearance */
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center vertically */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Color change on hover */
+    text-decoration: underline;
+}
+
+
+/* Contact Container */
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.contact-container p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+#contact-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #4CAF50;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    background-color:orange; /* Dark footer */
+    color: white; /* White text color */
+    padding: 10px; /* Padding for footer */
+    text-align: center; /* Center the footer text */
+    position: relative; /* Position footer relative */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}

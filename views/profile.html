@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Smart Canteen Management System</title>
+    <link rel="stylesheet" href="../public/assets/css/profile.css"> <!-- Use the same CSS file for consistent styling -->
+</head>
+<body>
+
+<header>
+    <div class="logo">Welcome to SmartCanteen</div>
+    <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="Registration.html">Registration</a>
+        <a href="login.html">Login</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order Now </a>
+        <a href="cart.html">Cart</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact Us</a>
+        
+    </nav>
+</header>
+
+<div class="profile-card">
+    <img src="path-to-default-profile-picture.jpg" alt="Profile Picture" class="profile-picture" id="profilePic">
+    <h2 id="usernameDisplay">John Doe</h2>
+    <p class="profile-info"><span>Email:</span> <span id="emailDisplay">john@example.com</span></p>
+    <p class="profile-info"><span>Account Type:</span> Premium User</p>
+
+    <button class="edit-profile-btn" id="editProfileButton">Edit Profile</button>
+    <button class="logout-btn" id="logoutButton">Logout</button>
+
+    <form class="edit-form" id="editProfileForm">
+        <label for="newUsername">Update Username</label>
+        <input type="text" id="newUsername" placeholder="Enter new username" />
+
+        <label for="newEmail">Update Email</label>
+        <input type="email" id="newEmail" placeholder="Enter new email" />
+
+        <label for="newProfilePic">Update Profile Picture</label>
+        <input type="file" id="newProfilePic" accept="image/*" />
+
+        <button type="submit" class="submit-btn">Save Changes</button>
+    </form>
+</div>
+        <p></p>
+            <p>
+            </p>
+            <footer>
+                <div class="footer-container">
+                    <p>&copy; 2024 Translator Website | All Rights Reserved</p>
+                </div>
+            </footer>
+
+            <script src="../public/assets/js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+// menu.pug
+extends layout
+
+block content
+link(rel="stylesheet", href="/assests/css/menu.css")
+  h1 Menu
+  #menu-container
+    h2 Categories
+    button(onclick="showCategory('breakfast')") Breakfast
+    button(onclick="showCategory('lunch')") Lunch
+    button(onclick="showCategory('snacks')") Snacks
+    button(onclick="showCategory('drinks')") Drinks
+    button(onclick="showCategory('all')") Show All
+
+    #menu.menu
+      // Menu items will be populated here by JavaScript

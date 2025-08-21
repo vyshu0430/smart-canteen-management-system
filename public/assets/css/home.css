@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 1000vh; /* Ensures footer stays at the bottom */
+}
+
+/* Header */
+header {
+    background-color: #9b7ebd;
+    padding: 50px 20px; /* Increased padding for better appearance */
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center vertically */
+}
+
+.logo {
+    font-size: 3.0em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+
+.nav-links a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    
+}
+
+
+.nav-links a:hover {
+    color: #ffcc00; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+/* Main Content */
+main {
+    flex: 1; /* Allow main to grow */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add some padding */
+}
+
+img {
+    max-width: 1000%; /* Responsive image */
+    height: 700px; /* Maintain aspect ratio */
+    display: block; /* Centers image when used with margin */
+    margin: 0 auto; /* Center the image */
+}
+
+footer {
+    background-color:orange; /* Dark footer */
+    margin-bottom: auto;
+    color: white; /* White text color */
+    padding: 10px; /* Padding for footer */
+    text-align: center; /* Center the footer text */
+    position: relative; /* Position footer relative */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+    padding: 1rem;
+}
+
+

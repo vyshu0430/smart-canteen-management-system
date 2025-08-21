@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Smart Canteen</title>
+    <link rel="stylesheet" href="../public/assets/css/order.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">SmartCanteen</div>
+    <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="Registration.html">Registration</a>
+        <a href="login.html">Login</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order Now</a>
+        <a href="cart.html">Cart</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact Us</a>
+        
+    </nav>
+</header>
+
+<main>
+    <h1>Order Now</h1>
+    <div id="order-container">
+        <h2>Select Your Items</h2>
+        <form id="order-form">
+            <div class="form-group">
+                <label for="item">Choose Category:</label>
+                <select id="item" name="item" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="snacks">Snacks</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="menuItems">Available Items:</label>
+                <select id="menuItems" name="menuItems" required>
+                    <option value="" disabled selected>Select an item</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Your Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Place Order</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>Contact Us | Privacy Policy | Terms of Service</p>
+    <p>&copy; 2024 SmartCanteen. All rights reserved.</p>
+</footer>
+
+<script src="../public/assets/js/order.js"></script>
+ <!-- Include your menu.js script -->
+
+</body>
+</html>
